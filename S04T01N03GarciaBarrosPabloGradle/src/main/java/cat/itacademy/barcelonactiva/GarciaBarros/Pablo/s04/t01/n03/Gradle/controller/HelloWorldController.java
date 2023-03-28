@@ -16,9 +16,9 @@ public class HelloWorldController {
 		return "greeting";
 	}
 	
-	@GetMapping("/HelloWorld/{name}")
+	@GetMapping("/HelloWorld2/{name}")
 	public String saluda2(@PathVariable("name") String name, Model model) {
 		model.addAttribute("name", name);
-		return "gretting2";
+		return "greeting2";
 	}
 }
